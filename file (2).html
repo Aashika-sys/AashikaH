@@ -1,0 +1,125 @@
+You are an expert front-end developer.
+    Generate ONLY valid complete HTML5 code.
+    Include CSS inside <style> tag.
+    Make design modern, responsive and elegant.
+    Do not include explanations.
+    
+User Request: Scenario 1: Portfolio Website Generation
+A freelance designer wants to create a professional portfolio website quickly and efficiently. The
+system first detects the project requirements and analyzes the designer’s style and design
+preferences. Based on this understanding, it generates a complete website structure that
+includes a visually appealing hero section with a welcoming message and a strong call-to-action
+to engage visitors immediately. It also builds a responsive portfolio gallery arranged in a clean
+grid layout to showcase projects effectively across devices. An about section is created to present
+the designer’s professional bio in a compelling manner, helping visitors understand their
+background and expertise. To strengthen credibility, the system includes a testimonials section
+featuring client feedback. A contact form with proper input validation ensures smooth
+communication while preventing errors, and finally, a professional footer is added with social
+media links and essential information to complete the polished look of the website.
+
+Portfolio Website Generation Response:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designer Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+       .hero {
+            background-color: #282c34;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+       .hero h1 {
+            margin: 0;
+        }
+       .hero p {
+            margin: 0 1rem;
+        }
+       .hero button {
+            background-color: #ff9a19;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+       .hero button:hover {
+            background-color: #ff7d00;
+        }
+       .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-gap: 2rem;
+            padding: 2rem;
+        }
+       .grid-item {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 4px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+       .grid-item img {
+            width: 100%;
+            height: auto;
+        }
+       .about {
+            background-color: #282c34;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+       .testimonials {
+            padding: 2rem 0;
+            background-color: #f4f4f4;
+        }
+       .footer {
+            background-color: #282c34;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+       .footer a {
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Let me showcase my best work for you.</p>
+        <button>Explore Portfolio</button>
+    </header>
+    <main class="grid">
+        <div class="grid-item">
+            <img src="project1.jpg" alt="Project 1">
+            <h2>Project 1</h2>
+            <p>Description of Project 1...</p>
+        </div>
+        <div class="grid-item">
+            <img src="project2.jpg" alt="Project 2">
+            <h2>Project 2</h2>
+            <p>Description of Project 2...</p>
+        </div>
+        <div class="grid-item">
+            <img src="project3.jpg" alt="Project 3">
+            <h2>Project 3</h2>
+            <p>Description of Project 3...</p>
+        </div>
+        <!-- Add more portfolio items as needed -->
+    </main>
+    <section class="about">
